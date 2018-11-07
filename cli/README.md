@@ -79,7 +79,7 @@ for e.g. to generate predictions from model `couplenet_10_14_6240.pth` modify
 
 in the `PREDICT_SETTINGS.json` file.
 
-NOTE: This file has to be run multiple times to generate 4 different submissions for each model that was generated above.
+NOTE: This script has to be run multiple times to generate 4 different submissions for each model that was generated above.
 
 ### Ensemble
 
