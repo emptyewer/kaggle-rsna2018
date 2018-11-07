@@ -10,7 +10,7 @@ NOTE: The `docker` way is the most reliable way of reproducing our results. The 
 
 2. Unzip the train images `stage_2_train_images.zip` to a convinient path. `<path>/stage_2_train_images` will be used for train images path.
 
-3. Download models from `our_models` folder in this repository and place it a convinient path. `<path>/weights` will be used in all the examples to refer to model/weights path.
+3. Download models from `our_weights` folder in this repository and place it a convinient path. `<path>/weights` will be used in all the examples to refer to model/weights path.
 
 ## System Setup and Requirements
 
