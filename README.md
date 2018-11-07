@@ -14,15 +14,23 @@ NOTE: Using `docker` is our recommended way to reproduce our competition results
 
 ## System Setup and Requirements
 
-1. Atleast one GPU (`NVIDIA GeForce GTX 180Ti` or up). 4 GPUs recommended.
+### Training
+  - Ubuntu (16.04 reccomended) 
+  - At least 4 GPUs (`NVIDIA GeForce GTX 180Ti` or up)
+  - Compatable nvidia drivers
+  - `docker` (version 18.06.1+ reccomended)
+  - `nvidia-docker` v2.0+
+  - `bash` v4.3+
+  - `git lfs`
 
-2. Install proper `nvidia` drivers for GPUs.
-
-3. Install and configure `docker` and `nvidia-docker2`.
-
-4. `git lfs` can be downloaded from [here](https://github.com/git-lfs/git-lfs/releases/tag/v2.6.0).
-
-4. `bash` or `zsh` shell
+### Inference
+  - Ubuntu (16.04 reccomended) 
+  - At least 1 GPU (`NVIDIA GeForce GTX 180Ti` or up)
+  - Compatable nvidia drivers
+  - `docker` (version 18.06.1+ reccomended)
+  - `nvidia-docker` v2.0+
+  - `bash` v4.3+
+  - `git lfs`
 
 ## Team Members
 
