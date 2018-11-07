@@ -1,0 +1,6 @@
+our_weights/couplenet_7_14_6420.pth filter=lfs diff=lfs merge=lfs -text
+our_weights/couplenet_8_14_6420.pth filter=lfs diff=lfs merge=lfs -text
+our_weights/couplenet_9_14_6420.pth filter=lfs diff=lfs merge=lfs -text
+our_weights/couplenet_10_14_6420.pth filter=lfs diff=lfs merge=lfs -text
+docker/build/resnet152_rcnn.pth filter=lfs diff=lfs merge=lfs -text
+cli/data/pretrained_model/resnet152_rcnn.pth filter=lfs diff=lfs merge=lfs -text

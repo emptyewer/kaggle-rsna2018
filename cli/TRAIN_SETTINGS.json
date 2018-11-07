@@ -1,0 +1,17 @@
+{
+    "session": 0,
+    "max_epochs": 14,
+    "num_workers": 2,
+    "optimizer": "sgd",
+    "batch_size": 4,
+    "flip_prob": 0.5,
+    "RNG_SEED": 14,
+    "MODEL_DIR": "weights",
+    "TRAIN_DATA_CLEAN_PATH": "/scratch/rsna/stage_2_train_images",
+    "TRAIN": {
+        "LEARNING_RATE": 0.001,
+        "FG_THRESH": 0.3,
+        "BG_THRESH_HI": 0.3,
+        "BG_THRESH_LO": 0.0
+    }
+}

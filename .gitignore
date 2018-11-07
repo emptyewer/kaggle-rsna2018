@@ -1,0 +1,8 @@
+*.pyc
+*.o
+__pycache__
+__pycache__/*
+*.so
+cli/src/weights
+cli/src/submission
+cli/src/ensemble

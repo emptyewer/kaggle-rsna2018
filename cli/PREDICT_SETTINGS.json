@@ -1,0 +1,10 @@
+{
+    "checksession": 7,
+    "checkepoch": 14,
+    "checkpoint": 6420,
+    "min_conf": 0.5,
+    "batch_size": 1,
+    "TEST_DATA_CLEAN_PATH": "/scratch/rsna/stage_2_test_images",
+    "MODEL_DIR": "weights",
+    "SUBMISSION_DIR": "submission"
+}

@@ -1,0 +1,9 @@
+{
+  "scoring_ensemble_method": "files_mean",
+  "mean_score_threshold": 0.25,
+  "ensemble_method": "median",
+  "overlap_threshold": 0.25,
+  "std_multiplier": 0.1,
+  "SUBMISSION_DIR": "submission",
+  "ENSEMBLE_DIR": "ensemble"
+}
