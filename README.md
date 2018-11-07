@@ -14,13 +14,21 @@ NOTE: The `docker` way is the most reliable way of reproducing our results. The 
 
 ## System Setup and Requirements
 
-1. Atleast one GPU (`NVIDIA GeForce GTX 180Ti` or up) and 4 CPUs.
+### Training
+  - Ubuntu (16.04 reccomended) 
+  - At least 4 GPUs (`NVIDIA GeForce GTX 180Ti` or up)
+  - Compatable nvidia drivers
+  - `docker` (version 18.06.1+ reccomended)
+  - `nvidia-docker` v2.0+
+  - `bash` v4.3+
 
-2. install proper `nvidia` drivers for GPUs.
-
-3. install and configure `docker` and `nvidia-docker2`.
-
-4. `bash` or `zsh` shell
+### Inference
+  - Ubuntu (16.04 reccomended) 
+  - At least 1 GPU (`NVIDIA GeForce GTX 180Ti` or up)
+  - Compatable nvidia drivers
+  - `docker` (version 18.06.1+ reccomended)
+  - `nvidia-docker` v2.0+
+  - `bash` v4.3+
 
 ## Team Members
 
