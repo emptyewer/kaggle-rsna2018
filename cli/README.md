@@ -1,36 +1,36 @@
 # Instruction for command line interface
 
-> Our final submission was generated after the `ensemble`
+> Our final submission was generated after the `ensemble` step.
 
 ## Prerequisites
 
-1. We highly recommend that you create a python virtual environment to run this code.
+> We highly recommend that you create a python virtual environment to run the following.
 
-2. Create the virutalenv with python interpreter version `3.5.2` or up.
+1. Create the virutalenv with python interpreter version `3.5.2` or up.
 
 ```
 mkvirtualenv -p /usr/bin/python3
 ```
 
-3. Install system libraries
+2. Install system libraries
 
 ```
 apt install python-dev python3-dev libopencv-dev
 ```
 
-4. add `CUDA` binaries to `PATH`
+3. add `CUDA` binaries to `PATH`
 
 ```
 export PATH=$PATH:"/usr/local/cuda/bin"
 ```
 
-5. Install `requirements.txt` for the package
+4. Install `requirements.txt` for the package
 
 ```
 pip install -r requirements.txt
 ```
 
-6. Compile custom `cuda` code
+5. Compile custom `cuda` code
 
 ```
 cd lib
@@ -40,9 +40,9 @@ cd ..
 
 ## Procedure
 
-After setting up the environment, run the follow the three below steps to generate our final submission
+After setting up the environment, follow the below steps to generate our final submission file.
 
-### Training
+### Step 1 (Training)
 
 ```
 python train.py
@@ -58,6 +58,7 @@ couplenet_1_14_<batch>.pth
 couplenet_2_14_<batch>.pth
 couplenet_3_14_<batch>.pth
 ```
+The model files are named `couplenet_<checksession>_<checkepoch>_<checkpoint>.pth`.
 
 ### Predictions
 
@@ -65,9 +66,9 @@ couplenet_3_14_<batch>.pth
 python predict.py
 ```
 
-This command reads from the file `PREDICT_SETTINGS.json` to read the locations of `TEST_DATA_CLEAN_PATH` images, `MODEL_DIR` input path and `SUBMISSION_DIR` output path.
+This command reads the settings from `PREDICT_SETTINGS.json` to gather the locations of `TEST_DATA_CLEAN_PATH` images, `MODEL_DIR` input path and `SUBMISSION_DIR` output path.
 
-The model files are named `couplenet_<checksession>_<checkepoch>_<checkpoint>.pth`. Change these vars  in `PREDICT_SETTINGS.json` to generate predictions for different models.
+Change `checksession`, `checkepoch`, `checkpoint` in `PREDICT_SETTINGS.json` to generate predictions for different models.
 
 for e.g. to generate predictions from model `couplenet_10_14_6240.pth` modify
 
@@ -79,7 +80,7 @@ for e.g. to generate predictions from model `couplenet_10_14_6240.pth` modify
 
 in the `PREDICT_SETTINGS.json` file.
 
-NOTE: This script has to be run multiple times to generate 4 different submissions for each model that was generated above.
+NOTE: This script needs to be run multiple times to generate 4 different submissions for each of the 4 models that was generated from the previous step.
 
 ### Ensemble
 
@@ -87,6 +88,6 @@ NOTE: This script has to be run multiple times to generate 4 different submissio
 python ensemble.py
 ```
 
-This command reads from the file `ENSEMBLE_SETTINGS.json` to locate `SUBMISSION_DIR` input path and `ENSEMBLE_DIR` output paths. This script will read all the text files in the `SUBMISSION_DIR` and output the ensembles.
+This command reads from the file `ENSEMBLE_SETTINGS.json` to locate `SUBMISSION_DIR` input path and `ENSEMBLE_DIR` output paths. This script will read all the text files in the `SUBMISSION_DIR` and generate the ensemble.
 
 NOTE: Keep all the settings same except for the directory paths in the `ENSEMBLE_SETTINGS.json` file.
