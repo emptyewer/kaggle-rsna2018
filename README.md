@@ -1,5 +1,7 @@
 # ChallengePneumo Solution for RSNA Pneumonia Detection Challenge (Rank 7)
 
+<span style="color:magenta">Install git lfs from [here](https://git-lfs.github.com/) to clone the repository</span>.
+
 The solution files are organized in two directories `docker` and `cli`. This provides two ways for reproducing our final results for kaggle.
 
 NOTE: Using `docker` is our recommended way to reproduce our competition results.
