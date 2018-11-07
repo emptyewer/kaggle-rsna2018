@@ -21,3 +21,12 @@ NOTE: The `docker` way is the most reliable way of reproducing our results. The 
 3. install and configure `docker` and `nvidia-docker2`.
 
 4. `bash` or `zsh` shell
+
+## Team Members
+
+* Adil Ainihaer
+* Ankoor Bhagat
+* Venkatramanan Krishnamani
+* Tong Luo
+* Jameson Merkow
+* Arvind M Vepa
