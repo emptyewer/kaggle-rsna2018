@@ -8,7 +8,7 @@ function show_usage() {
     echo "   --share: Additional paths to mount in docker."
     echo "            NOTE: supports multiple --share flags."
     echo "   --gpus: GPU-IDs (separated by commas)"
-    echo "          default: 0,1"
+    echo "          default: 0,1,2,3"
     echo ""
     echo "   --traindata: path to the directory of train images"
     echo ""
@@ -40,7 +40,7 @@ function main () {
     LOCAL_USER_ID=$(id -u ${USER})
     LOCAL_GROUP_ID=$(id -g ${USER})
     DOCKER_IMAGE=venkykrishna/kaggle:rsna2018
-    GPU=${gpus-0,1}
+    GPU=${gpus-0,1,2,3}
 
     # get mount string for all shared paths
     SHARE_ARGS=""
