@@ -12,24 +12,26 @@ NOTE: Using `docker` is our recommended way to reproduce our competition results
 
 2. Unzip the train images `stage_2_train_images.zip` to a convenient path. `<path>/stage_2_train_images` will be used in all the examples to refer to train images path.
 
-3. Download models from `our_weights` folder in this repository and place it a convenient path. `<path>/weights` will be used in all the examples to refer to model/weights path.
+3. Place models from `our_weights` folder in a convenient path. `<path>/weights` will be used in all the examples to refer to model/weights path. You can also leave the weights in the current path in the repository.
 
 ## System Setup and Requirements
 
+NOTE: To clone the repository, make sure to have `git lfs` installed.
+
 ### Training
-  - Ubuntu (16.04 reccomended) 
-  - At least 4 GPUs (`NVIDIA GeForce GTX 180Ti` or up)
-  - Compatable nvidia drivers
-  - `docker` (version 18.06.1+ reccomended)
+  - Ubuntu (16.04 recommended)
+  - 4 GPUs (`NVIDIA GeForce GTX 1080Ti` or up)
+  - Compatible nvidia drivers
+  - `docker` (version 18.06.1+ recommended)
   - `nvidia-docker` v2.0+
   - `bash` v4.3+
   - `git lfs`
 
 ### Inference
-  - Ubuntu (16.04 reccomended) 
-  - At least 1 GPU (`NVIDIA GeForce GTX 180Ti` or up)
-  - Compatable nvidia drivers
-  - `docker` (version 18.06.1+ reccomended)
+  - Ubuntu (16.04 recommended)
+  - At least 1 GPU (`NVIDIA GeForce GTX 1080Ti` or up)
+  - Compatible nvidia drivers
+  - `docker` (version 18.06.1+ recommended)
   - `nvidia-docker` v2.0+
   - `bash` v4.3+
   - `git lfs`
