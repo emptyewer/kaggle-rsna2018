@@ -42,6 +42,8 @@ function main () {
     DOCKER_IMAGE=venkykrishna/kaggle:rsna2018
     GPU=${gpus-0,1}
 
+    docker pull $DOCKER_IMAGE
+
     # get mount string for all shared paths
     SHARE_ARGS=""
     for s in "${share[@]}"; do
