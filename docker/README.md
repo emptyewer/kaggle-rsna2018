@@ -76,6 +76,9 @@ Running all the cells of `Predict.ipynb` will generate prediction files from the
 
 Running the cells of `Ensemble.ipynb` will generate a submission file by ensembling all four of the prediction files from the previous step. The file will be saved to an `ensemble` directory within the same directory as where `run.sh` command was invoked.
 
+*Note* Current implementation has a bug, different order of the prediction files will produce slightly different final results. The file order to produce our exact final result is: `couplenet_4_14_6670.pth`, `couplenet_3_14_6670.pth`, `couplenet_1_14_6670.pth`, `couplenet_2_14_6670.pth`. We are working to correct this bug and will update the repository accordingly.
+
+
 # Optional information for manual execution
 
 ## Docker Image
