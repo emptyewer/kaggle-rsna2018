@@ -91,3 +91,5 @@ python ensemble.py
 This command reads from the file `ENSEMBLE_SETTINGS.json` to locate `SUBMISSION_DIR` input path and `ENSEMBLE_DIR` output paths. This script will read all the text files in the `SUBMISSION_DIR` and generate the ensemble.
 
 NOTE: Keep all the settings same except for the directory paths in the `ENSEMBLE_SETTINGS.json` file.
+
+*Note* Current implementation has a bug, different order of the prediction files will produce slightly different final results. The file order to produce our exact final result is: `couplenet_4_14_6670.pth`, `couplenet_3_14_6670.pth`, `couplenet_1_14_6670.pth`, `couplenet_2_14_6670.pth`. We are working to correct this bug and will update the repository accordingly.
