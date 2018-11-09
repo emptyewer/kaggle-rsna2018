@@ -1,0 +1,4 @@
+couplenet_1_14_6670.pth filter=lfs diff=lfs merge=lfs -text
+couplenet_2_14_6670.pth filter=lfs diff=lfs merge=lfs -text
+couplenet_3_14_6670.pth filter=lfs diff=lfs merge=lfs -text
+couplenet_4_14_6670.pth filter=lfs diff=lfs merge=lfs -text
