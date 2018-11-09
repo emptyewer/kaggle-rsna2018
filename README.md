@@ -1,4 +1,4 @@
-# ChallengePneumo Solution for RSNA Pneumonia Detection Challenge (Rank 7)
+# DeepRadiology Solution for RSNA Pneumonia Detection Challenge (Rank 7)
 
 <span style="color:magenta">Install git lfs from [here](https://git-lfs.github.com/) to clone the repository</span>.
 

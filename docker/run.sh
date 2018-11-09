@@ -36,10 +36,10 @@ function main () {
         exit -1
     fi
 
-    CONTAINER_NAME=ChallengePneumo_$(date +%d%b%Y)-r${RANDOM}
+    CONTAINER_NAME=DeepRadiology_$(date +%d%b%Y)-r${RANDOM}
     LOCAL_USER_ID=$(id -u ${USER})
     LOCAL_GROUP_ID=$(id -g ${USER})
-    DOCKER_IMAGE=venkykrishna/kaggle:rsna2018
+    DOCKER_IMAGE=deepradiology/kaggle:rsna2018
     GPU=${gpus-0,1,2,3}
 
     docker pull $DOCKER_IMAGE
@@ -92,7 +92,7 @@ function main () {
     }
     trap teardown SIGINT SIGTERM SIGKILL
 
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting ChallengePneumo Notebook ..."
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting DeepRadiology Notebook ..."
     CONTAINER_ID=$(nvidia-docker run ${RUN_OPTS} ${DOCKER_IMAGE} /bin/bash -c "chown -R ${LOCAL_USER_ID}:${LOCAL_GROUP_ID} /work; chown -R ${LOCAL_USER_ID}:${LOCAL_GROUP_ID} /home/user; chown -R ${LOCAL_USER_ID}:${LOCAL_GROUP_ID} /notebooks; chown -R ${LOCAL_USER_ID}:${LOCAL_GROUP_ID} /opt/R-FCN.pytorch; tail -f /dev/null")
     echo "Container ID: ${CONTAINER_ID} (${CONTAINER_NAME})"
     nvidia-docker exec -u ${LOCAL_USER_ID}:${LOCAL_GROUP_ID} -e HOME=/home/user ${CONTAINER_NAME} /run_jupyter.sh
